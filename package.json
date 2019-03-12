@@ -1,0 +1,52 @@
+{
+  "name": "sucAlastriaDeploy",
+  "version": "1.0.0",
+  "description": "Soporte SUC para despliegue en Alastria",
+  "scripts": {
+    "run": "deploy.js"
+  },
+  "author": "dappsar",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dappsar/suc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dappsar/suc/issues"
+  },
+  "homepage": "https://github.com/dappsar/suc#readme",
+  "keywords": [
+    "ethereum",
+    "blockchain",
+    "eth",
+    "contracts",
+    "contract",
+    "smart",
+    "smart-contract",
+    "smart-contracts",
+    "token",
+    "tokens",
+    "nft",
+    "nfts",
+    "non-fungible",
+    "non-fungibles",
+    "eip",
+    "erc",
+    "erc721",
+    "erc-721",
+    "horse",
+    "social",
+    "crowdfunding",
+    "deed",
+    "standard"
+  ],
+  "devDependencies": {
+    "solc": "^0.5.2",
+    "get-json": "1.0.1",
+    "web3": "0.20.0"
+  },
+  "engines": {
+    "node": ">8.11.x",
+    "npm": ">5.6.x"
+  }
+}
