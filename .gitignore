@@ -7,3 +7,4 @@ build
 yarn.lock
 package-lock.json
 .env.development
+__old*
