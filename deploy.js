@@ -5,7 +5,6 @@
 // https://gist.github.com/tomconte/4edb83cf505f1e7faf172b9252fff9bf
 // APi info: https://rinkeby.etherscan.io/apis#contracts
 //
-
 // Alastria blockchain
 var blockchainAddress = process.env.blockchainAddress || "http://34.241.169.145:22000";
 
@@ -41,7 +40,6 @@ function main() {
 
   console.log("\nLoading contract byteCode from bytecode.json...");
   byteCode = getByteCode();
-
 
   //console.log("\nGetting Contract ABI from address " + contractAddress + "...");
   url = "https://api-rinkeby.etherscan.io/api?module=contract&action=getabi&address=" + contractAddress;
@@ -99,7 +97,6 @@ function getByteCode() {
   return '0x' + byteCode;
 }
 
-
 function testContract(address) {
 
   console.log("Testing contract...");
@@ -111,7 +108,6 @@ function testContract(address) {
   console.log("Contract support Interface ERC721Metadata: " + mToken.supportsInterface('0x5b5e139f'));
   console.log("Contract support Interface ERC721Enumerable: " + mToken.supportsInterface('0x780e9d63'));
   console.log("Contract support Interface ERC165: " + mToken.supportsInterface('0x01ffc9a7'));
-
   // console.log(mToken.mint(account, "2"));
   // console.log(mToken.balanceOf(account)); // 1
   //console.log(mToken.totalSupply()); // 1
@@ -119,7 +115,6 @@ function testContract(address) {
   // console.log("Returns the correct issuer symbol (suc): " + (mToken.symbol().toString() == "suc"));
 
 }
-
 
 // entry point
 main();
