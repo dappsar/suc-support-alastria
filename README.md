@@ -8,19 +8,34 @@ Mientras tanto, se creó este repositorio para subir los contratos del proyecto 
 Instrucciones
 
 # Clonar el repo
+```
 git clone git@github.com:dappsar/suc-support-alastria.git
+```
 
 # ingresar a carpeta clonada
+```
 cd suc-support-alastria
+```
 
 # Instalar dependencias
+```
 npm i
+```
 
 # Setear variables de entorno
+```
 export blockchainAddress="http://34.241.169.145:22000"
 export account="<Account de Alastria>"
 export contractAddress="0x8f5d8a9ab805e1cf655eaab81370ab6e90e1eabe"
 export accountPswd="<pswd de cuenta de Alastria>"
+```
 
 # Desplegar contrato de SUC en Alastria
+```
 node deploy.js
+```
+
+# Ver las transacciones en ex explorador de Quorum
+```
+https://blkexplorer1.telsius.alastria.io/account/
+```

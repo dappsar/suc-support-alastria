@@ -81,8 +81,17 @@ function deployContract(contract, byteCode) {
         // If we have an address property, the contract was deployed
         if (response.address) {
           console.log("\nContract deployed! - address: " + response.address);
+
+          console.log("\nlast block: " + web3.eth.getBlock ( 'latest' ));
+
           // Let's test the deployed contract
           testContract(response.address);
+
+          //console.log("\n\n");
+          //console.log("\nTransaction: ");
+          console.log(response);
+          
+
         }
       }
     });
